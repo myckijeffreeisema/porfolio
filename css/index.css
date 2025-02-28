@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+}
+
+body .container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
+    padding: 20px;
+
+}
+
+body section{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+
+body section .content{
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+body  header{
+    display: flex;
+    background-color: #080a0a;
+    width: 100%;
+    padding: 10px auto;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    opacity: 0.98;
+}
+
+body  header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body  header .container span a{
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+body  header nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+
+body  header nav ul li{
+    list-style: none;
+}
+
+body  header nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+body  header nav ul li a:hover{
+    color: #006687;
+}
+
+body main .hero{
+    text-align: center;
+    background-color: #ddd;
+}
+
+body main .hero .content{
+    display: flex;
+    flex-direction: column;
+}
+
+body main .hero h1{
+    color: #000;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+body main .hero h2{
+    font-size: 16px;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+body main .hero .content p{
+    line-height: 24px;
+    color: #111;
+    font-size: 16px;
+}
+
+body main .skills{
+    background: #ccc;
+    text-align: center;
+    gap: 30px;
+}
+
+body main .skills .content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+body main .skills .content h2{
+    color: #111;
+    font-weight: 400;
+}
+
+body main .skills .content h3{
+    color: #333;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+body main .skills .content ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+body main .skills .content ul li{
+    list-style: none;
+}
+
+body main .projects{
+    background-color: #ddd;
+}
+
+body main .projects .content{
+    text-align: center;
+}
+
+body main .contacts{
+    background-color: #ccc;
+    text-align: center;
+}
+
+body main .contacts .content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+body main .contacts .content ul{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+body main .contacts .content ul li{
+    list-style: none;
+}
+
+body main .contacts .content ul li a{
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+body main .contacts .content ul li a:hover{
+    text-decoration: underline;
+}
+body footer{
+    background-color: #080a0a;
+    text-align: center;
+    padding: 40px;
+    color: #ddd;
+    font-size: 14px;
+}
+body header button{
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    body header button{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    body header button span{
+        width: 25px;
+        height: 2px;
+        background-color: #fff;
+    }
+
+    body header{
+        border-bottom: 1px solid #fff;
+    }
+    body header .container nav{
+        position: absolute;
+        padding: 20px;
+        background-color: #080a0a;
+        width: 100%;
+        min-height: 100vh;
+        top: 0px;
+        left: -100%;
+        margin-top: 70px;
+    }
+
+    body header .container nav ul{
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+}
+
+
